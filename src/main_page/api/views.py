@@ -11,3 +11,6 @@ class CardViewSet(ModelViewSet):
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     lookup_field = 'pk'
 
+
+
+
