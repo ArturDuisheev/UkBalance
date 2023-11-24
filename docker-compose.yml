@@ -1,7 +1,7 @@
 version: '3.3'
 
-
 services:
+
   back-end:
     user: "root"
     build:
@@ -14,9 +14,9 @@ services:
       - static_volume:/home/app/web/static
       - media_volume:/home/app/web/media
     ports:
-      - "8000"
+      - "80:8000"
     env_file:
-    - ./src/.env/
+      - ./src/.env/
 
 
 
