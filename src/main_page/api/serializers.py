@@ -14,7 +14,7 @@ class CardSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = mod_main_page.Card
-        fields = ('id', 'logo_company', 'section_text')
+        fields = ('id', 'logo_company', 'title_company', 'section_text')
 
     def create(self, validated_data):
         section_many = validated_data.pop('section_text', [])

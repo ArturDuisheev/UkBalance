@@ -8,6 +8,10 @@ class Card(models.Model):
         _('Логотип компании'),
         upload_to='cards/logos/'
     )
+    title_company = models.CharField(
+        _('Название компании'),
+        max_length=120
+    )
     section_text = models.ManyToManyField('SectionInCard', verbose_name=_('секция по тексту '))
 
     def __str__(self):
