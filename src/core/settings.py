@@ -22,7 +22,8 @@ LOCAL_APPS = [
 THIRTY_PARTY_APPS = [
     "rest_framework",
     "corsheaders",
-    "phonenumber_field"
+    "phonenumber_field",
+    "drf_yasg"
 
 ]
 

@@ -6,13 +6,17 @@ django-cors-headers==4.3.1
 django-jazzmin==2.6.0
 django-phonenumber-field==7.2.0
 djangorestframework==3.14.0
+drf-yasg==1.21.7
 gunicorn==21.2.0
 idna==3.4
+inflection==0.5.1
 packaging==23.2
 Pillow==10.1.0
 python-decouple==3.8
 pytz==2023.3.post1
+PyYAML==6.0.1
 requests==2.31.0
 sqlparse==0.4.4
 tzdata==2023.3
+uritemplate==4.1.1
 urllib3==2.1.0
