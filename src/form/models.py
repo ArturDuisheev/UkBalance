@@ -13,6 +13,9 @@ class DropDownSide(models.Model):
         max_length=40
     )
 
+    def __str__(self):
+        return f'{self.not_required_sum_investments}, {self.not_required_term}'
+
 
 class Form(models.Model):
     name = models.CharField(
@@ -40,13 +43,9 @@ class Form(models.Model):
         auto_now_add=True
     )
 
-
-
     def __str__(self) -> str:
         return f'form: {self.name}.{self.surname[0]}, phone: {self.code_country}{self.phone_number}'
 
     class Meta:
         verbose_name = _('Form data')
         verbose_name_plural = _('Forms data')
-
-
