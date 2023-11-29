@@ -12,15 +12,15 @@ JAZZMIN_SETTINGS = {
     "topmenu_links": [
         {"name": "Main", "url": "admin:index", "permissions": ["auth.view_user"]},
     ],
-    "usermenu_links": [
-        {
-            "model": "main_page.Card",
-        },
-    ],
+    # "usermenu_links": [
+    #     {
+    #         "model": "main_page.Card",
+    #     },
+    # ],
     "show_sidebar": True,
     "navigation_expanded": False,
-    "hide_apps": ['auth.groups'],
-    "hide_models": [],
+    "hide_apps": ['main_page'],
+    "hide_models": ['auth.group'],
     "icons": {
         # app icons
         "auth": "fas fa-users",
